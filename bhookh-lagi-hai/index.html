@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bhookh Lagi Hai — Where Every Dish Tells a Story</title>
+    <meta name="description" content="Bhookh Lagi Hai Cafe & Restaurant — Authentic Indian flavors, heartwarming stories, and delightful experiences. 10:30 AM - 10:30 PM. Call 09119119140." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bhookh Lagi Hai — Where Every Dish Tells a Story" />
+    <meta property="og:description" content="Authentic Indian cafe culture brought to life through food, stories, and design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://source.unsplash.com/1200x800/?indian,restaurant" />
+    <meta property="og:url" content="https://example.com/bhookh-lagi-hai" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='24'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E" />
+</head>
+
+<body data-theme="auto">
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Background animated layers -->
+    <div class="blob-layer" aria-hidden="true"></div>
+    <div class="gradient-layer" aria-hidden="true"></div>
+    <div class="pattern-layer" aria-hidden="true"></div>
+
+    <!-- Header / Nav -->
+    <header class="site-header" role="banner" aria-label="Main header">
+        <div class="container header-inner">
+            <a href="#hero" class="brand" aria-label="Bhookh Lagi Hai home">
+                <span class="brand-title" aria-hidden="true">Bhookh Lagi Hai</span>
+            </a>
+
+            <button class="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav" role="navigation" aria-label="Primary">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-meta" aria-label="Contact and hours">
+                <a href="tel:09119119140" class="phone" aria-label="Call 09119119140">09119119140</a>
+                <div class="hours" aria-live="polite">
+                    <span class="clock-icon" aria-hidden="true">🕙</span>
+                    <span>10:30 AM - 10:30 PM</span>
+                    <span class="open-state">•</span>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle light/dark mode">🌗</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero" aria-label="Hero">
+        <div class="hero-bg" data-parallax style="background-image:url('https://source.unsplash.com/1200x800/?indian,restaurant');"></div>
+        <div class="grain-overlay" aria-hidden="true"></div>
+        <div class="hero-content container">
+            <h1 class="title">Authentic Indian Flavors. No Compromise.</h1>
+            <a href="#menu" class="cta bounce" role="button">Explore Menu</a>
+            <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+        </div>
+        <canvas class="particles" aria-hidden="true"></canvas>
+    </section>
+
+    <!-- About / Story -->
+    <section id="about" class="about section">
+        <div class="container">
+            <header class="section-header">
+                <h2>Our Story Kitchen</h2>
+                <p class="section-tag">Google Rating <strong class="rating" tabindex="0" aria-label="Google rating 4.2 stars with 1.3K+ reviews">4.2 ⭐</strong> • <span class="customers" aria-live="polite">1.3K+ reviews</span></p>
+            </header>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number years" data-target="7">0</span>
+                    <span class="stat-label">Years of Service</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number happy" data-target="1300">0</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+
+            <div class="story-grid">
+                <article class="story-card flip" aria-label="Paneer Tikka story">
+                    <img src="https://source.unsplash.com/800x600/?paneer,tikka" loading="lazy" alt="Paneer Tikka" />
+                    <div class="story-content">
+                        <h3 class="story-title">Paneer Tikka</h3>
+                        <p class="story-text">Born in the tandoors of Punjab, smoky and celebratory.</p>
+                    </div>
+                </article>
+                <article class="story-card flip" aria-label="Fried Momos story">
+                    <img src="https://source.unsplash.com/800x600/?momos" loading="lazy" alt="Fried Momos" />
+                    <div class="story-content">
+                        <h3 class="story-title">Fried Momos</h3>
+                        <p class="story-text">From Himalayan stalls to city nights — crisp, warm, comforting.</p>
+                    </div>
+                </article>
+                <article class="story-card flip" aria-label="Malai Chaap story">
+                    <img src="https://source.unsplash.com/800x600/?indian,food" loading="lazy" alt="Malai Chaap" />
+                    <div class="story-content">
+                        <h3 class="story-title">Malai Chaap</h3>
+                        <p class="story-text">Velvet cream, spice-kissed — a Delhi classic.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <header class="section-header">
+                <h2>Menu Highlights</h2>
+                <div class="menu-filters" role="tablist" aria-label="Menu categories">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn" data-filter="veg" role="tab">Veg</button>
+                    <button class="filter-btn" data-filter="vegan" role="tab">Vegan</button>
+                    <button class="filter-btn" data-filter="fast" role="tab">Fast Food</button>
+                </div>
+            </header>
+
+            <div class="menu-grid">
+                <article class="menu-card flip3d" data-cat="veg">
+                    <div class="menu-media sizzling"></div>
+                    <h3>Paneer Tikka</h3>
+                    <p class="ingredients">Paneer, yogurt, tandoori masala, capsicum, onions</p>
+                </article>
+                <article class="menu-card flip3d" data-cat="fast">
+                    <div class="menu-media steam"></div>
+                    <h3>Fried Momos</h3>
+                    <p class="ingredients">Vegetable filling, chili chutney, herbs</p>
+                </article>
+                <article class="menu-card flip3d" data-cat="veg">
+                    <div class="menu-media garnish"></div>
+                    <h3>Malai Chaap</h3>
+                    <p class="ingredients">Soya chaap, cream, spices, coriander</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (consolidated) -->
+    <section id="services" class="services section">
+        <div class="container">
+            <header class="section-header"><h2>Services</h2></header>
+            <div class="services-grid">
+                <article class="service-card slide-in" aria-label="Dine-In"><div class="icon table"></div><h3>Dine-In</h3></article>
+                <article class="service-card slide-in" aria-label="Takeaway"><div class="icon bag"></div><h3>Takeaway</h3></article>
+                <article class="service-card slide-in" aria-label="Delivery"><div class="icon bike"></div><h3>Delivery</h3></article>
+                <article class="service-card slide-in" aria-label="Catering"><div class="icon car"></div><h3>Catering</h3></article>
+            </div>
+            <div class="payments-strip" aria-label="Payment methods">
+                <span>Accepted: </span>
+                <span class="pay">💳 Cards</span>
+                <span class="pay">📲 UPI / NFC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery (Cafe Images) -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <header class="section-header"><h2>Our Cafe</h2></header>
+            <div class="gallery-grid">
+                <img src="https://source.unsplash.com/800x600/?cafe,india" loading="lazy" alt="Cafe interior" />
+                <img src="https://source.unsplash.com/800x600/?restaurant,india" loading="lazy" alt="Dining area" />
+                <img src="https://source.unsplash.com/800x600/?indian,streetfood" loading="lazy" alt="Signature dish" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="reviews section">
+        <div class="container">
+            <header class="section-header">
+                <h2>What Our Guests Say</h2>
+                <div class="avg-rating" aria-label="Average rating 4.2 out of 5">
+                    <div class="stars"><span class="fill" style="width:84%"></span></div>
+                    <span>4.2 / 5</span>
+                    <span class="count">1.3K+ Happy Customers</span>
+                </div>
+            </header>
+            <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Customer reviews">
+                <button class="carousel-prev" aria-label="Previous review">‹</button>
+                <div class="carousel-track" tabindex="0">
+                    <article class="review-card"><div class="stars small"><span class="fill" style="width:100%"></span></div><p>Authentic flavors and warm vibes. Loved the Paneer Tikka!</p><span class="author">— Aisha</span></article>
+                    <article class="review-card"><div class="stars small"><span class="fill" style="width:80%"></span></div><p>Perfect place for lunch meetings. Service is super quick.</p><span class="author">— Rohan</span></article>
+                    <article class="review-card"><div class="stars small"><span class="fill" style="width:90%"></span></div><p>Cozy ambience and great vegan options. Highly recommend.</p><span class="author">— Neha</span></article>
+                </div>
+                <button class="carousel-next" aria-label="Next review">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="brand-mark">Bhookh Lagi Hai</h3>
+                <p>
+                    <span class="pin" aria-hidden="true">📍</span> Your Local Street, New Delhi, India
+                </p>
+                <p>
+                    <a href="tel:09119119140" class="footer-link">09119119140</a><br />
+                    <a href="mailto:hello@bhookh.com" class="footer-link">hello@bhookh.com</a>
+                </p>
+                <div class="socials" aria-label="Social links">
+                    <a href="#" aria-label="Instagram" class="social">📸</a>
+                    <a href="#" aria-label="Facebook" class="social">📘</a>
+                    <a href="#" aria-label="Twitter" class="social">🐦</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="quick-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form class="newsletter" aria-label="Newsletter signup" novalidate>
+                    <label for="news-email" class="sr-only">Email</label>
+                    <input id="news-email" name="email" type="email" placeholder="Your email" required />
+                    <button type="submit" class="ripple">Subscribe</button>
+                    <p class="form-msg" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+        <button class="back-to-top" aria-label="Back to top">🚀</button>
+        <p class="copyright">© <span id="year"></span> Bhookh Lagi Hai. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js" defer></script>
+</body>
+</html>
+
+
