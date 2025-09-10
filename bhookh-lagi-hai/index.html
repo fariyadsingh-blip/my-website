@@ -14,10 +14,13 @@
     <meta property="og:image" content="https://source.unsplash.com/1200x800/?indian,restaurant" />
     <meta property="og:url" content="https://example.com/bhookh-lagi-hai" />
 
-    <!-- Fonts -->
+    <!-- Modern Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./style.css" />
@@ -57,13 +60,18 @@
             </nav>
 
             <div class="header-meta" aria-label="Contact and hours">
-                <a href="tel:09119119140" class="phone" aria-label="Call 09119119140">09119119140</a>
+                <a href="tel:09119119140" class="phone" aria-label="Call 09119119140">
+                    <i class="fas fa-phone"></i>
+                    <span>09119119140</span>
+                </a>
                 <div class="hours" aria-live="polite">
-                    <span class="clock-icon" aria-hidden="true">🕙</span>
+                    <i class="fas fa-clock clock-icon" aria-hidden="true"></i>
                     <span>10:30 AM - 10:30 PM</span>
                     <span class="open-state">•</span>
                 </div>
-                <button class="theme-toggle" aria-label="Toggle light/dark mode">🌗</button>
+                <button class="theme-toggle" aria-label="Toggle light/dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -71,11 +79,57 @@
     <!-- Hero -->
     <section id="hero" class="hero" aria-label="Hero">
         <div class="hero-bg" data-parallax style="background-image:url('https://source.unsplash.com/1200x800/?indian,restaurant');"></div>
-        <div class="grain-overlay" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="floating-elements" aria-hidden="true">
+            <div class="floating-spice floating-spice-1">🌶️</div>
+            <div class="floating-spice floating-spice-2">🍛</div>
+            <div class="floating-spice floating-spice-3">🥘</div>
+            <div class="floating-spice floating-spice-4">🌿</div>
+        </div>
         <div class="hero-content container">
-            <h1 class="title">Authentic Indian Flavors. No Compromise.</h1>
-            <a href="#menu" class="cta bounce" role="button">Explore Menu</a>
-            <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+            <div class="hero-badge animate-in">
+                <i class="fas fa-star"></i>
+                <span>4.2 Rating • 1.3K+ Reviews</span>
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="title-line">Authentic Indian</span>
+                <span class="title-line gradient-text">Flavors</span>
+                <span class="title-line">No Compromise</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Experience the rich tapestry of Indian cuisine with every bite. 
+                From street food classics to royal delicacies, we bring authentic flavors to your table.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="#menu" class="cta-primary" role="button">
+                    <span>Explore Menu</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="cta-secondary" role="button">
+                    <span>Our Story</span>
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat-item">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Dishes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1.3K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
         <canvas class="particles" aria-hidden="true"></canvas>
     </section>
@@ -162,11 +216,35 @@
     <section id="services" class="services section">
         <div class="container">
             <header class="section-header"><h2>Services</h2></header>
-            <div class="services-grid">
-                <article class="service-card slide-in" aria-label="Dine-In"><div class="icon table"></div><h3>Dine-In</h3></article>
-                <article class="service-card slide-in" aria-label="Takeaway"><div class="icon bag"></div><h3>Takeaway</h3></article>
-                <article class="service-card slide-in" aria-label="Delivery"><div class="icon bike"></div><h3>Delivery</h3></article>
-                <article class="service-card slide-in" aria-label="Catering"><div class="icon car"></div><h3>Catering</h3></article>
+            <div class="services-grid grid grid-4">
+                <article class="service-card animate-in" aria-label="Dine-In">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dine-In</h3>
+                    <p>Experience our cozy ambiance with authentic Indian decor</p>
+                </article>
+                <article class="service-card animate-in" aria-label="Takeaway">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Takeaway</h3>
+                    <p>Quick and convenient pickup for your favorite dishes</p>
+                </article>
+                <article class="service-card animate-in" aria-label="Delivery">
+                    <div class="service-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Delivery</h3>
+                    <p>Fresh food delivered hot to your doorstep</p>
+                </article>
+                <article class="service-card animate-in" aria-label="Catering">
+                    <div class="service-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Special events and celebrations made memorable</p>
+                </article>
             </div>
             <div class="payments-strip" aria-label="Payment methods">
                 <span>Accepted: </span>
@@ -216,17 +294,33 @@
         <div class="container footer-grid">
             <div class="footer-col">
                 <h3 class="brand-mark">Bhookh Lagi Hai</h3>
-                <p>
-                    <span class="pin" aria-hidden="true">📍</span> Your Local Street, New Delhi, India
+                <p class="footer-address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Your Local Street, New Delhi, India</span>
                 </p>
-                <p>
-                    <a href="tel:09119119140" class="footer-link">09119119140</a><br />
-                    <a href="mailto:hello@bhookh.com" class="footer-link">hello@bhookh.com</a>
+                <p class="footer-contact">
+                    <a href="tel:09119119140" class="footer-link">
+                        <i class="fas fa-phone"></i>
+                        <span>09119119140</span>
+                    </a><br />
+                    <a href="mailto:hello@bhookh.com" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@bhookh.com</span>
+                    </a>
                 </p>
                 <div class="socials" aria-label="Social links">
-                    <a href="#" aria-label="Instagram" class="social">📸</a>
-                    <a href="#" aria-label="Facebook" class="social">📘</a>
-                    <a href="#" aria-label="Twitter" class="social">🐦</a>
+                    <a href="#" aria-label="Instagram" class="social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp" class="social">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-col">
@@ -248,7 +342,9 @@
                 </form>
             </div>
         </div>
-        <button class="back-to-top" aria-label="Back to top">🚀</button>
+        <button class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
         <p class="copyright">© <span id="year"></span> Bhookh Lagi Hai. All rights reserved.</p>
     </footer>
 
